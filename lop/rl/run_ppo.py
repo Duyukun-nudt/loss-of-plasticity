@@ -121,6 +121,7 @@ def main():
     seed = cfg['seed']
     friction = -1.0
     if cfg['env_name'] in ['SlipperyAnt-v2', 'SlipperyAnt-v3']:
+        print(1)
         xml_file = os.path.abspath(cfg['dir'] + f'slippery_ant_{seed}.xml')
         cfg.setdefault('friction', [0.02, 2])
         cfg.setdefault('change_time', int(2e6))
